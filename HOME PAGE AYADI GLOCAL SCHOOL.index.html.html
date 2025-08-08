@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayadi Glocal School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: #000;
+      background: url('https://img.freepik.com/free-vector/abstract-smooth-light-background_1035-18400.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    h1, h2, p {
+      transition: transform 0.3s ease;
+    }
+
+    h1:hover,
+    h2:hover,
+    p:hover {
+      transform: scale(1.1);
+    }
+
+    header {
+      background-color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 5px solid #d0006f;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-weight: 700;
+      color: black;
+    }
+
+    .hero {
+      min-height: 100vh;
+      padding-top: 80px;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 48px;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px #999;
+      margin-bottom: 40px;
+    }
+
+    .info-box {
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 0 auto;
+      padding: 30px;
+      max-width: 800px;
+      border: 4px solid #d0006f;
+      border-radius: 20px;
+    }
+
+    .info-box h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .info-box p {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      text-decoration: none;
+      background-color: black;
+      color: white;
+      padding: 12px 24px;
+      font-weight: bold;
+      border: 2px solid lime;
+      border-radius: 6px;
+      display: inline-block;
+    }
+
+    .photo-section {
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .photo-container {
+      position: relative;
+      width: 300px;
+      height: 200px;
+      margin: 0 auto 30px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(12, 209, 203, 0.2);
+      background-color: #ffffff;
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .photo-container:hover img {
+      transform: scale(1.1);
+    }
+
+    .photo-caption {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .photo-container:hover .photo-caption {
+      opacity: 1;
+    }
+
+    .welcome-box {
+      position: relative;
+      background-image: url('C:/Users/Admin/Desktop/S.I PROECTbackround.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: 3px solid #b1005a;
+      padding: 30px;
+      border-radius: 20px;
+      color: rgb(3, 3, 3);
+      text-align: center;
+      max-width: 900px;
+      margin: 40px auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .welcome-box::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .welcome-box * {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">AYADI GLOCAL SCHOOL</div>
+    <nav>
+      <ul>
+        <li><a href="file:///C:/Users/Admin/Desktop/S.I%20PROECT/HOME%20PAGE%20AYADI%20GLOCAL%20SCHOOL.html">HOME</a></li>
+        <li><a href="file:///C:/Users/Admin/Desktop/S.I%20PROECT/ACADEMICS%20(2).html">ACADEMICS</a></li>
+        <li><a href="file:///C:/Users/Admin/Desktop/S.I%20PROECT/check%20box.html">REGISTRATION</a></li>
+        <li><a href="file:///C:/Users/Admin/Desktop/S.I%20PROECT/About%20us%20ayadi%20glocal%20school%20%20(1)%20(1).html">TO KNOW MOREABOUT US</a></li>
+        <li><a href="#">CONTACT US</a></li>
+        <li><a href="file:///C:/Users/Admin/Desktop/S.I%20PROECT/registrtion%20form.html">ENTER YOUR</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>AYADI GLOCAL SCHOOL<br><span>A Window To Our World</span></h1>
+    </div>
+    <div class="info-box">
+      <h2>WELCOME TO AYADI GLOCAL SCHOOL</h2>
+      <p>
+        Ayadi Glocal School is Teaching CBSE Curriculum<br>
+        Ayadi Conducts Classes on Zoom, so you can attend from anywhere in the world.<br><br>
+        WE PROVIDE:<br><br>
+        MORAL EDUCATION<br>
+        SPANISH AND FRENCH<br>
+        ROBOTICS AND PROGRAMMING<br>
+        MEDITATION AND AFFIRMATION<br>
+        FUNDAMENTALS IN MATHS, IT, SCIENCE, SOCIAL SCIENCE, HINDI, ENGLISH, MALAYALAM<br><br>
+        CLASS 1–8
+      </p>
+      <a href="#" class="btn">GET START</a>
+    </div>
+  </section>
+
+  <section class="photo-section">
+    <div class="photo-container">
+      <img src="C:/Users/Admin/Downloads/CEO.jpg" alt="CEO OF AYADI, Ameer Haasan" />
+      <div class="photo-caption">CEO OF AYADI<br>Ameen Hassan</div>
+    </div>
+
+    <div class="photo-container">
+      <img src="C:/Users/Admin/Downloads/kalam siddiki.jpEg" alt="CED OF AYADI, Kalam Siddiqi" />
+      <div class="photo-caption">CED OF AYADI<br>Kalam Siddiqi</div>
+    </div>
+
+    <div class="photo-container">
+      <img src="C:/Users/Admin/Downloads/PRINCIPLE.jpg" alt="Principal Ajitha Hemachandran" />
+      <div class="photo-caption">PRINCIPAL<br>Ajitha Hemachandran</div>
+    </div>
+  </section>
+
+</body>
+</html>
